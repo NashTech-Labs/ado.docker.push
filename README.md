@@ -1,4 +1,4 @@
-# ADO Pipeline Template for Docker Login
+# ADO Pipeline Template for Docker Build
 
 This template contains an Azure pipeline that can be extended to build an image from a docker file under different Azure pipelines.
 

@@ -18,9 +18,6 @@ You can directly call a paticular template as per the requirement. for example: 
     - name: imageRepository
       type: string
 
-    - name: dockerfile
-      type: string
-
     - name: tags
       type: string
 
@@ -34,11 +31,10 @@ You can directly call a paticular template as per the requirement. for example: 
 
   steps:
 
-  - template: push.yml@Docker
+  - template: build.yml@Docker
     parameters:
         containerRegistry: '${{parameters.RegistryToken}}'
         repository: '${{parameters.imageRepository}}'
-        Dockerfile: '${{parameters.dockerfile}}'
         tags: ${{parameters.tags}}
   ```
 

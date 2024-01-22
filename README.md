@@ -24,8 +24,8 @@ To call this in your pipeline you can follow this example:
     repositories:
       - repository: Docker
         type: github
-        name: knoldus/ado.docker.push
-        ref: <respective branch name>
+        name: NashTech-Labs/ado.docker.push
+        ref: main
         endpoint: '<GitHub Service Connection>'
 
   steps:
